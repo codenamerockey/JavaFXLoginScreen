@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #29434e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="491.0" layoutY="14.0" prefHeight="20.0" prefWidth="185.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="16.0" layoutY="77.0" prefHeight="147.0" prefWidth="669.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="146.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/profile.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="214.0" layoutY="37.0" prefHeight="17.0" prefWidth="272.0" text="Name:" textFill="#686363" />
+            <Label fx:id="detailsProfession" layoutX="214.0" layoutY="66.0" prefHeight="17.0" prefWidth="195.0" text="Profession:" textFill="#686363" />
+            <Label fx:id="detailsLocation" layoutX="214.0" layoutY="97.0" prefHeight="17.0" prefWidth="195.0" text="Location:" textFill="#686363" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="162.0" layoutY="231.0" prefHeight="147.0" prefWidth="513.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="524.0" style="-fx-background-color: #455a64;">
+               <children>
+                  <Label alignment="CENTER" layoutX="126.0" layoutY="10.0" prefHeight="17.0" prefWidth="272.0" text="How to Find Me" textFill="#fff9f9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="86.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-website-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="84.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-twitter-48.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="detailsWeb" layoutX="111.0" layoutY="52.0" prefHeight="23.0" prefWidth="249.0" text="www.codenamerockey.com" />
+            <Hyperlink fx:id="detailsTwitter" layoutX="111.0" layoutY="86.0" prefHeight="23.0" prefWidth="261.0" text="\@codenamerockey" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
